@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+  .bar{
+    @apply h-1 bg-[#200D66] w-full transition-all duration-500
+  }
+
+  .bar-1.active{
+    @apply -translate-x-4 translate-y-4 rotate-45
+  }
+
+  .bar-2.active{
+    @apply w-0
+  }
+
+  .bar-3.active{
+    @apply -translate-x-4 -translate-y-3 -rotate-45
+  }
+
+}
+
+/* .myClass{
+  background-image: url('/public/chip.PNG');
+} */
